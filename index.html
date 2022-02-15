@@ -1,35 +1,5 @@
-<!--
-    COMP 333: Software Engineering
-    Sebastian Zimmeck (szimmeck@wesleyan.edu)
--->
 
-<!--
-    You can use this file as a starting point for any HTML page that you want to
-    create.
-
-    This is a comment. Comments will not be displayed in the browser. A comment
-    can go over one or multiple lines.
-
-    Use the !DOCTYPE declaration to explicitly tell the browser receiving this
-    file that it is an HMTL file. A DOCTYPE associates a particular document
-    with a document type definition (DTD), for example, the formal definition of
-    a particular version of HTML 2.0 - 4.0. The HTML layout engines in modern
-    web browsers perform DOCTYPE "sniffing" or "switching", wherein the DOCTYPE
-    in a document determines a layout mode, such as "quirks mode" (for
-    compatibility) or "standards mode" (for compliance with current standards).
-    The DOCTYPE is retained in HTML5 as a "mostly useless, but required" header
-    only to trigger "standards mode" in common browsers.
--->
 <!DOCTYPE HTML>
-<!--
-    After the DOCTYPE, the html document begins as is indicated by the html
-    root element. You can think of your entire html document as a tree and
-    the html element as the root from which everything else sprouts.
-
-    The language attribute is used by web search engines to display search
-    results in a particular language. E.g. if you are using Google in the US,
-    you will not see many French pages returned in your results.
--->
 <html lang="en">
 <!--
     The head section has all the meta information, i.e., information about our
@@ -54,33 +24,8 @@
         visible to the user in the tab in which the site is opened. Titles
         should be unique.
     -->
-    <title>COMP 333: Software Engineering</title>
-    <!--
-        You could apply CSS styles in-line, i.e., in your HTML files, as follows:
+    <title>HW1 Landing Page</title>
 
-        <style>
-            p{color:red;}
-        </style>
-
-        This style would turn all font in paragraphs red. Generally, it is a
-        good idea to use a dedicated Style Sheet to have all styles
-        systematically in one place and not duplicate those. Include a link as
-        below in any HTML page where you want to use styles from your Style
-        Sheet.
-
-        You can have multiple Style Sheets; the browser would use all.
-
-        Just as CSS styles, you can also include JavaScript code in-line in your
-        HTML files using the <script> and </script? opening and closing tags.
-        Place CSS styles/links in the header and JavaScript code/links before the
-        closing </body> tag. The reason for having Style Sheets in the header is
-        that otherwise browsers would need to reflow the layout while the user
-        is trying to interact with the page. If you would not have JavaScript
-        at the end, browsers in some cases would have to block processing
-        the HTML while JavaScript code is still being loaded.
-        https://stackoverflow.com/questions/6625773/where-should-i-put-the-css-and-javascript-code-in-an-html-webpage
-        https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup/24070373#24070373
-    -->
     <link rel="stylesheet" href="style_sample.css">
 </head>
 
@@ -98,7 +43,7 @@
      <!--
   Include in html file.
 -->
-    <h1>A CSS flexbox</h1>
+    <!-- <h1>A CSS flexbox</h1>
 
     <div class="flex-container" style="width: 100%;">
       <div>This</div>
@@ -108,15 +53,26 @@
       <div>Place</div>
       <div>(Naive</div>
       <div>Melody)</div>
-    </div>
+    </div> -->
 
-    <h1>HTML and CSS Samples</h1>
-    <h2>1. Basics</h2>
-    <p>This is a paragraph.</p>
-    <!--
-        The <br> tag will cause a line break. It is self-closing.
-    -->
-    <p>This is paragraph<br>with a line break.</p>
+    <h1>Song Rater</h1>
+    <h2>What is Song Rater?</h2>
+    <ul>
+        <li>A place where you can compile and rate every song you come across</li>
+        <li>You can rate any song, just like this <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">one </a> </li>
+        <li>You can give reviews for songs</li>
+        <li>View and comment on other users reviews</li>
+        <li>You can see how others have rated songs</li>
+        <li>For any given song, you can listen to a snippet of the beginning for referennce</li>
+        <li>Those who purchase our monthly premium membership may listen to any songs fully</li>
+    </ul>
+    <h2>What is it going to look like?</h2>
+    <div class="flex-container" style="width: 100%;">
+        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/applemusic/ios14-iphone-11-pro-music-create-new-playlist-add-music.jpg" alt="Photo of example song" width="240" height="380">
+        <img src="https://www.edesk.com/wp-content/uploads/2021/05/seller-feedback-vs-product-reviews-on-amazon.jpg" alt="Photo of example song" width="500" height="250">
+    </div>
+    <p>As you can see you can <b>select</b> songs, give them a <b>rating</b> of your choosing, and see how it <b>compares</b> to other users opinions</p>
+    <iframe src="memberships.html" name="navframe"></iframe>
     <hr><p>This is paragraph with a horizontal rule on top.</p>
     <!--
         Additional items, such as style below, are attributes of an elment. The

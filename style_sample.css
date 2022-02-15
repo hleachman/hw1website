@@ -28,14 +28,14 @@ body {
     All text in paragraphs should be blue.
 */
 p {
-    color:blue;
+    color:Black;
 }
 
 /*
     The background of all divs should be pink.
  */
 div {
-    background-color: hotpink;
+    background-color: white;
 }
 /*
   Include in CSS file.
@@ -43,7 +43,7 @@ div {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: orange;
+    background-color: white
  }
 
 .flex-container > div {
@@ -136,7 +136,7 @@ a:hover {
     /*
         For navbars use background color that stands out.
     */
-    background-color: black;
+    background-color: white;
     text-align: center;
 }
 
@@ -145,13 +145,13 @@ a:hover {
 */
 .navbar li {
     width: 150 px;
-    background-color: #000;
-    border: 1px solid red;
+    background-color: cyan;
+    border: 10px black;
     /*
         Show the navbar elements next to each other instead of on top of each
         other.
     */
-    padding: 10px;
+    padding: 5px;
     display: inline-block;
     line-height: 40px;
 }
@@ -160,7 +160,7 @@ a:hover {
     Style links in navbar.
 */
 .navbar a {
-    color:#fff;
+    color:black;
     text-decoration: none;
 }
 
